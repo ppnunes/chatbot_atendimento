@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot de Atendimento</title>
-</head>
-<body>
-    <h1>Olá, mundo!</h1>
-    <p>Este é um arquivo HTML básico.</p>
-    <script src="//code.tidio.co/agidykfqhulydkqopx6qgkgyfmbr3esg.js" async></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- install vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <title>Chatbot de Atendimento!</title>
+  </head>
+  <body>
+    <el-main id="app" class="app level">
+      <el-row type="flex" class="row-bg" justify="center">
+        <el-empty
+          image="bot.jpg"
+          :image-size="300"
+          description=" "
+        ></el-empty>
+      </el-row>
+      <el-row justify="center" class="row-bg" :gutter="20">
+        <el-col :span="12" :offset="6">
+          <span class="texto">
+            Texto texto texto texto texto texto texto texto <br>
+            Novo texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+          </span>
+        </el-col>
+      </el-row>
+    </el-main>
+
+    <script>
+      var app = new Vue({
+        el: "#app"
+      });
+    </script>
+    <script src="https://code.tidio.co/agidykfqhulydkqopx6qgkgyfmbr3esg.js" async></script>
+    <style>
+      @font-face {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://widget-v4.tidiochat.com/fonts/mulish_SGhgqk3wotYKNnBQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      .texto { 
+        font-family: "Mulish", sans-serif;
+        font-size: 16px;
+        line-height: 17px;
+      }
+  </style>
+  </body>
 </html>
